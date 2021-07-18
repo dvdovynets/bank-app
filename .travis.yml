@@ -1,11 +1,8 @@
-os: linux
-arch:
-  - ppc64le
 language: java
 jdk:
   - openjdk11
-script:
-  - mvn clean install
+install:
+  - chmod +x mvnw
 cache:
   directories:
     - $HOME/.m2
