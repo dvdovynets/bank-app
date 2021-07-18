@@ -5,8 +5,6 @@ import com.study.bank.model.User;
 import java.util.Set;
 import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Component
 public class DataInitializer {
