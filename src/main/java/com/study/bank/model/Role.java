@@ -21,9 +21,9 @@ public class Role {
     private Long id;
     @Enumerated(EnumType.STRING)
     @Column(name = "role_type")
-    private RoleType roleType;
+    private RoleName roleName;
 
-    public enum RoleType {
+    public enum RoleName {
         ADMIN, USER
     }
 }
