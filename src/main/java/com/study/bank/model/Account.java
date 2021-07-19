@@ -11,6 +11,7 @@ import javax.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Value;
 
 @Entity
 @Getter
@@ -24,6 +25,7 @@ public class Account {
     private String accountNumber;
     private Currency currency;
     private BigDecimal balance;
+    @Value("${isActive:true}")
     private boolean isActive;
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;

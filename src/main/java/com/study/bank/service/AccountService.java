@@ -5,7 +5,7 @@ import com.study.bank.model.Transaction;
 import java.util.List;
 
 public interface AccountService {
-    public void save(Account account, Long userId);
+    public Account save(Account account, Long userId);
 
     public List<Account> getAllAccounts(String userPhoneNumber);
 
@@ -15,5 +15,5 @@ public interface AccountService {
 
     public List<Transaction> getOperationsByAccountNumber(String accountNumber);
 
-    public void bockAccount(String accountNumber);
+    public void blockAccount(String accountNumber);
 }

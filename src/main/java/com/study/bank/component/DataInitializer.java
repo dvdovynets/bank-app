@@ -11,9 +11,9 @@ public class DataInitializer {
     @PostConstruct
     public String inject() {
         Role admin = new Role();
-        admin.setRoleType(Role.RoleType.ADMIN);
+        admin.setRoleName(Role.RoleName.ADMIN);
         Role user = new Role();
-        user.setRoleType(Role.RoleType.USER);
+        user.setRoleName(Role.RoleName.USER);
 
         User bob = new User();
         bob.setName("bob");
